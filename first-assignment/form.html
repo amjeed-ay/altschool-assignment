@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock yout Potential | AltSchool Africa</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/form.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/first-assignment/index.html">Home</a></li>
+        <li><a href="./form.html">Signup</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <div class="logoWrapper md:hidden">
+        <img src="images/logo.svg" alt="" />
+      </div>
+
+      <div class="form-container-wrapper">
+        <div class="left-col">
+          <div class="illustration-wrapper">
+            <img src="images/hero-illustration.png" alt="" />
+          </div>
+          <h1 class="heading">
+            Learn highly sought after skills without hassle.
+          </h1>
+          <div class="social-media-wrapper">
+            <a href="http://twitter.com"
+              ><img src="images/icon-twitter.svg" alt="twitter"
+            /></a>
+            <a href="http://twitter.com"
+              ><img src="images/icon-instagram.svg" alt="instagram"
+            /></a>
+            <a href="http://twitter.com"
+              ><img src="images/icon-facebook.svg" alt="facebook"
+            /></a>
+            <a href="http://twitter.com"
+              ><img src="images/icon-linkedin.svg" alt="linkedin"
+            /></a>
+          </div>
+          <a href="" class="contact-info">Tel: 0800ALTSCHOOL</a>
+          <p class="footer-text">
+            &copy; 2024 AltSchool Africa. All rights reserved.
+          </p>
+        </div>
+
+        <div class="form-wrapper">
+          <p>
+            Already an AltSchooler?
+            <span> Sign In!</span>
+          </p>
+          <h2>Signup</h2>
+          <p class="text-muted" style="display: flex">
+            Take the next steps to apply at AltSchool Africa
+          </p>
+
+          <div class="w-full">
+            <form action="" class="form">
+              <div class="form-container">
+                <!-- Firstname -->
+                <div class="input-container">
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    class="input-field"
+                    placeholder="Enter first Name"
+                    id="firstname"
+                  />
+                </div>
+
+                <!-- Lastname -->
+                <div class="input-container">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    class="input-field"
+                    placeholder="Enter last Name"
+                    id="lastname"
+                  />
+                </div>
+              </div>
+
+              <!-- Gender DOB -->
+              <div class="form-container">
+                <!-- Gender -->
+                <div class="input-container">
+                  <label for="gender">Gender</label>
+                  <select
+                    id="gender"
+                    name="gender"
+                    class="input-select"
+                    style="
+                      background-image: url('images/arrow-down.svg');
+                      background-position: calc(100% - 0.75rem) center;
+                      background-size: 1rem 1rem;
+                    "
+                  >
+                    <option value="" disabled selected>
+                      Select your gender
+                    </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="input-container">
+                  <label for="dob">Date of Birth</label>
+                  <input
+                    type="date"
+                    class="input-field"
+                    placeholder="dd/mm/yy"
+                    id="dob"
+                  />
+                </div>
+              </div>
+
+              <!-- Email Phone Number -->
+              <div class="form-container">
+                <!-- Email -->
+                <div class="input-container">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="input-field"
+                    placeholder="enter email address"
+                    id="email"
+                  />
+                </div>
+
+                <!-- Phone Number -->
+                <div class="input-container">
+                  <label for="mobile">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="input-field"
+                    placeholder="0812345678"
+                    id="mobile"
+                  />
+                </div>
+              </div>
+
+              <!-- Country State of Residence -->
+              <div class="form-container">
+                <div class="input-container">
+                  <label for="country">Country</label>
+                  <select
+                    id="country"
+                    name="country"
+                    class="input-select"
+                    style="
+                      background-image: url('images/arrow-down.svg');
+                      background-position: calc(100% - 0.75rem) center;
+                      background-size: 1rem 1rem;
+                    "
+                  >
+                    <option value="" disabled selected>
+                      Select your country
+                    </option>
+
+                    <option value="USA">United States</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+                    <option value="Russia">Russia</option>
+                    <option value="China">China</option>
+                    <option value="Mexico">Mexico</option>
+                  </select>
+                </div>
+                <div class="input-container">
+                  <label for="states">State</label>
+                  <input
+                    type="text"
+                    class="input-field"
+                    placeholder="enter your state"
+                    id="states"
+                  />
+                </div>
+              </div>
+
+              <!-- How Did your hear about Us -->
+              <div class="form-containerl">
+                <label for="channel-selection"
+                  >How did you hear about us?</label
+                >
+                <select
+                  id="channel-selection"
+                  name="channel-selection"
+                  class="input-select"
+                  style="
+                    background-image: url('images/arrow-down.svg');
+                    background-position: calc(100% - 0.75rem) center;
+                    background-size: 1rem 1rem;
+                  "
+                >
+                  <option value="" disabled selected>Select a channel</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="friend">Friend</option>
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="billboard">Billboard</option>
+                </select>
+              </div>
+
+              <!-- Password & Confirm Password -->
+              <div class="form-container">
+                <div class="input-container">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="input-field"
+                    placeholder="enter password"
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    class="input-field"
+                    placeholder="enter password again"
+                    id="confirm-password"
+                  />
+                </div>
+              </div>
+
+              <!-- Terms & Agreements -->
+              <div class="terms-container">
+                <p class="terms-text">
+                  By clicking continue, I agree to
+                  <span class="terms-link">Terms of Use</span> and acknowledge
+                  that I have read the
+                  <span class="terms-link">Privacy Policy</span>.
+                </p>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span>Submit</span>
+                <img src="images/asset 8.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
