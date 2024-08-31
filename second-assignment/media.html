@@ -15,86 +15,92 @@
         max-width: 800px;
         margin: 0 auto;
       }
+
+      nav {
+        background-color: #ffffff;
+        color: #1f2937;
+        padding: 20px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      nav ul li a {
+        color: #1f2937;
+        text-decoration: none;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="./media.html">Media</a></li>
+        <li><a href="./table.html">Table</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <h1>About Me</h1>
 
       <picture>
-        <source media="(min-width: 1024px)" srcset="laptop-image.jpg" />
-        <source media="(min-width: 768px)" srcset="tablet-image.jpg" />
-        <source media="(min-width: 320px)" srcset="mobile-image.jpg" />
+        <source media="(min-width: 1024px)" srcset="./media/image.jpg" />
+        <source media="(min-width: 768px)" srcset="./media/image.jpg" />
+        <source media="(min-width: 320px)" srcset="./media/image.jpg" />
         <img
-          src="default-image.jpg"
-          alt="A picture of me"
+          src="./media/image.jpg"
+          alt="A picture "
           style="max-width: 100%; height: auto"
         />
       </picture>
 
-      <h2>My Project Showcase Video</h2>
-
-      <!-- Upload Video to Vimeo and replace link here later -->
-      <iframe
-        title="vimeo-player"
-        src="https://player.vimeo.com/video/1002391859?h=d516d80e47"
-        frameborder="2"
-        allowfullscreen
-      ></iframe>
-
       <h2>My Favorite Song</h2>
       <audio controls>
-        <source
-          src="https://media.quranco.com/audio/alafasy-64/017002.mp3"
-          type="audio/mpeg"
-        />
+        <source src="./media/my-audio.mp3" type="audio/mpeg" />
 
         Your browser does not support the audio element.
       </audio>
-      <audio controls>
-        <source
-          src="https://media.quranco.com/audio/alafasy-64/017003.mp3"
-          type="audio/mpeg"
-        />
 
-        Your browser does not support the audio element.
-      </audio>
+      <video controls src="./media/my-video.mp4"></video>
 
       <h2>About Me</h2>
       <p>
-        Hello! I'm [Your Name]. I'm passionate about [your interests/field of
-        study]. I'm currently a student at AltSchool Africa, pursuing [your
-        course].
+        Hello! I'm Abdulmajid Yunusa. I'm passionate about technology. I'm
+        currently a student at AltSchool Africa, pursuing Cloud Engineering.
       </p>
 
       <h2>My Skills</h2>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>HTML and CSS</li>
       </ul>
 
       <h2>My Projects</h2>
       <iframe
-        width="100%"
+        width="560"
         height="315"
-        src="https://www.youtube.com/embed/your-video-id"
+        src="https://www.youtube.com/embed/2RVm6fBa0r4?si=JWyrr1llsyqBBHLA"
+        title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
 
       <h2>Contact Me</h2>
-      <p>Email: your.email@example.com</p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/your-profile"
-          >Your LinkedIn Profile</a
-        >
-      </p>
+      <p>Email: techjeed@gmail.com</p>
+
       <p>
         GitHub:
-        <a href="https://github.com/your-username">Your GitHub Profile</a>
+        <a href="https://github.com/amjeed-ay"> GitHub</a>
       </p>
     </div>
   </body>
